@@ -4,7 +4,7 @@
     <string name="throwDice">RZUĆ KOŚCIAMI</string>
     <string name="resetDice">RESETUJ WYNIK</string>
     <string name="emptyDice">\?</string>
-    <string name="thisRoll">Wynik tego losowania: 0</string>
-    <string name="allRolls">Wynik gry: 0</string>
-    <string name="rollcount">Liczba rzutów: 0</string>
+    <string name="thisRoll">Wynik tego losowania: %1$s</string>
+    <string name="allRolls">Wynik gry: %1$s</string>
+    <string name="rollcount">Liczba rzutów: %1$s</string>
 </resources>

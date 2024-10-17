@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,6 +13,8 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:width="360dp"
         android:height="40dp"
         android:background="#A52A2A"
@@ -21,15 +24,17 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <Button
         android:id="@+id/throwDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:width="360dp"
         android:height="20dp"
         android:text="@string/throwDice"
@@ -40,84 +45,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.173" />
 
-    <TextView
-        android:id="@+id/dice1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="55dp"
-        android:height="55dp"
-        android:background="#ffffff"
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:text="@string/emptyDice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dice2"
-        app:layout_constraintHorizontal_bias="0.774"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/throwDice"
-        app:layout_constraintVertical_bias="0.048" />
-
-    <TextView
-        android:id="@+id/dice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="55dp"
-        android:height="55dp"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:text="@string/emptyDice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dice3"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/throwDice"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <TextView
-        android:id="@+id/dice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="55dp"
-        android:height="55dp"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:text="@string/emptyDice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/throwDice"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285">
 
-    <TextView
-        android:id="@+id/dice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="55dp"
-        android:height="55dp"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:text="@string/emptyDice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toEndOf="@+id/dice3"
-        app:layout_constraintTop_toBottomOf="@+id/throwDice"
-        app:layout_constraintVertical_bias="0.049" />
+        <TextView
+            android:id="@+id/dice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:width="60dp"
+            android:height="60dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/emptyDice" />
 
-    <TextView
-        android:id="@+id/dice5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="55dp"
-        android:height="55dp"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:text="@string/emptyDice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toEndOf="@+id/dice4"
-        app:layout_constraintTop_toBottomOf="@+id/throwDice"
-        app:layout_constraintVertical_bias="0.048" />
+        <TextView
+            android:id="@+id/dice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:width="60dp"
+            android:height="60dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/emptyDice" />
+
+        <TextView
+            android:id="@+id/dice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:width="60dp"
+            android:height="60dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/emptyDice" />
+
+        <TextView
+            android:id="@+id/dice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:width="60dp"
+            android:height="60dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/emptyDice" />
+
+        <TextView
+            android:id="@+id/dice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:width="60dp"
+            android:height="60dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/emptyDice" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/thisRoll"
@@ -126,10 +119,10 @@
         android:text="@string/thisRoll"
         app:layout_constraintBottom_toTopOf="@+id/allRolls"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintVertical_bias="0.948" />
 
     <TextView
         android:id="@+id/allRolls"
@@ -138,10 +131,10 @@
         android:text="@string/allRolls"
         app:layout_constraintBottom_toTopOf="@+id/rollCount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965" />
+        app:layout_constraintVertical_bias="0.955" />
 
     <TextView
         android:id="@+id/rollCount"
@@ -150,24 +143,26 @@
         android:text="@string/rollcount"
         app:layout_constraintBottom_toTopOf="@+id/resetDice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
+        app:layout_constraintVertical_bias="0.919" />
 
     <Button
         android:id="@+id/resetDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:width="360dp"
         android:height="20dp"
         android:text="@string/resetDice"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.595" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

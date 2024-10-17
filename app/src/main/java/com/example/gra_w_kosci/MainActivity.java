@@ -1,5 +1,6 @@
 package com.example.gra_w_kosci;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView allRolls;
     private TextView rollCount;
 
+    private Resources res;
+
     int thisRollCounter = 0;
     int allRollsCounter = 0;
     int numberOfRolls = 0;
@@ -43,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         allRolls = findViewById(R.id.allRolls);
         rollCount = findViewById(R.id.rollCount);
 
+        res = getResources();
+
+        resetGame();
 
         throwDice.setOnClickListener(view -> {
             thisRollCounter = 0;
@@ -77,12 +83,15 @@ public class MainActivity extends AppCompatActivity {
     }
     void updateScore(int newScore){
         allRollsCounter += newScore;
-        thisRoll.setText("Wynik tego losowania:" + newScore);
-        allRolls.setText("Wynik gry: " + allRollsCounter);
+        String thisRollText = res.getString(R.string.thisRoll, String.valueOf(thisRollCounter));
+        String allRollsText = res.getString(R.string.allRolls, String.valueOf(allRollsCounter));
+        thisRoll.setText(thisRollText);
+        allRolls.setText(allRollsText);
     }
     void updateRollCount(){
         numberOfRolls++;
-        rollCount.setText("Ilość rzutów: " + numberOfRolls);
+        String rollCountText = res.getString(R.string.rollcount, String.valueOf(numberOfRolls));
+        rollCount.setText(rollCountText);
     }
     void displayDiceResult(int[] diceResult){
         dice1.setText(String.valueOf(diceResult[0]));
