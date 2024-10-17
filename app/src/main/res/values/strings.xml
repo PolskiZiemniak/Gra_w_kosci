@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gra_w_kosci</string>
+    <string name="tytul">Gra w kości. Autor: Jakub Maciaszczyk</string>
+    <string name="throwDice">RZUĆ KOŚCIAMI</string>
+    <string name="resetDice">RESETUJ WYNIK</string>
+    <string name="emptyDice">\?</string>
+    <string name="thisRoll">Wynik tego losowania: 0</string>
+    <string name="allRolls">Wynik gry: 0</string>
+    <string name="rollcount">Liczba rzutów: 0</string>
+</resources>
