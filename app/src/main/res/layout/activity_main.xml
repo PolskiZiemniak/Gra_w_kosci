@@ -56,10 +56,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.285">
 
-        <TextView
+        <ImageView
             android:id="@+id/dice1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/emptydice"
             android:layout_margin="9dp"
             android:width="60dp"
             android:height="60dp"
@@ -67,10 +68,11 @@
             android:gravity="center"
             android:text="@string/emptyDice" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dice2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/emptydice"
             android:layout_margin="9dp"
             android:width="60dp"
             android:height="60dp"
@@ -78,10 +80,11 @@
             android:gravity="center"
             android:text="@string/emptyDice" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dice3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/emptydice"
             android:layout_margin="9dp"
             android:width="60dp"
             android:height="60dp"
@@ -89,10 +92,11 @@
             android:gravity="center"
             android:text="@string/emptyDice" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dice4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/emptydice"
             android:layout_margin="9dp"
             android:width="60dp"
             android:height="60dp"
@@ -100,10 +104,11 @@
             android:gravity="center"
             android:text="@string/emptyDice" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dice5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/emptydice"
             android:layout_margin="9dp"
             android:width="60dp"
             android:height="60dp"

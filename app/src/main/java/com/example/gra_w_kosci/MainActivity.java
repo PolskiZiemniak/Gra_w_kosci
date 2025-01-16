@@ -1,8 +1,11 @@
 package com.example.gra_w_kosci;
 
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,16 +15,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button throwDice;
-    private Button reset;
-    private TextView dice1;
-    private TextView dice2;
-    private TextView dice3;
-    private TextView dice4;
-    private TextView dice5;
-    private TextView thisRoll;
-    private TextView allRolls;
-    private TextView rollCount;
+    private Button throwDice, reset;
+    private ImageView dice1, dice2, dice3, dice4, dice5;
+    private TextView thisRoll, allRolls, rollCount;
+    private int[] diceImages = new int[]{R.drawable.dice1, R.drawable.dice2, R.drawable.dice3, R.drawable.dice4, R.drawable.dice5, R.drawable.dice6};
 
     private Resources res;
 
@@ -73,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
         thisRollCounter = 0;
         allRollsCounter = 0;
         numberOfRolls = -1;
-        dice1.setText("?");
-        dice2.setText("?");
-        dice3.setText("?");
-        dice4.setText("?");
-        dice5.setText("?");
+        dice1.setImageResource(R.drawable.emptydice);
+        dice2.setImageResource(R.drawable.emptydice);
+        dice3.setImageResource(R.drawable.emptydice);
+        dice4.setImageResource(R.drawable.emptydice);
+        dice5.setImageResource(R.drawable.emptydice);
         updateScore(0);
         updateRollCount();
     }
@@ -94,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
         rollCount.setText(rollCountText);
     }
     void displayDiceResult(int[] diceResult){
-        dice1.setText(String.valueOf(diceResult[0]));
-        dice2.setText(String.valueOf(diceResult[1]));
-        dice3.setText(String.valueOf(diceResult[2]));
-        dice4.setText(String.valueOf(diceResult[3]));
-        dice5.setText(String.valueOf(diceResult[4]));
+        dice1.setImageResource(diceImages[diceResult[0]]);
+        dice2.setImageResource(diceImages[diceResult[1]]);
+        dice3.setImageResource(diceImages[diceResult[2]]);
+        dice4.setImageResource(diceImages[diceResult[3]]);
+        dice5.setImageResource(diceImages[diceResult[4]]);
     }
 }
